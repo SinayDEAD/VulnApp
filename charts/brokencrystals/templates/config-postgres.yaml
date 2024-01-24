@@ -4,4 +4,4 @@ metadata:
   name: {{ include "brokencrystals.fullname" . }}-postgres
   namespace: {{ .Release.Namespace }}
 data:
-  pg.sql: {{- tpl .Files.Get "pg.sql" | nindent 4 }}
+  pg.sql: {{- tpl .Files.Get "../../../../pg.sql" | nindent 4 }}
